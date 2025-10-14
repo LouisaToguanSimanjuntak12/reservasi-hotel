@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservasi Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Hotel Room</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Personal Data</b></legend>
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter your name">
+
+                <label>Gender</label>
+                <input type="text" name="gender" placeholder="Male / Female">
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="example@mail.com">
+
+                <label>Phone Number</label>
+                <input type="text" name="telp" placeholder="08xxxxxxxxxx">
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Reservation Room Form</b></legend>
+                <label>Reservator Name</label>
+                <input type="text" name="reservatorname" placeholder="Enter reservator name">
+
+                <label>Booking Date</label>
+                <input type="date" name="bookingdate">
+
+                <label>Room Type</label>
+                <select name="roomtype">
+                    <option>Deluxe</option>
+                    <option>Superior</option>
+                    <option>Standard</option>
+                </select>
+
+                <label>Bed Type</label>
+                <select name="bedtype">
+                    <option>Single bed</option>
+                    <option>Double bed</option>
+                </select>
+
+                <label>Breakfast</label>
+                <div class="radio-group">
+                    <input type="radio" name="breakfast" value="with"> With Breakfast
+                    <input type="radio" name="breakfast" value="without"> Without Breakfast
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Payment</b></legend>
+                <label>Check-in Date</label>
+                <input type="date" name="checkin">
+
+                <label>Check-out Date</label>
+                <input type="date" name="checkout">
+
+                <label>Payment Method</label>
+                <select name="payment">
+                    <option>Cash</option>
+                    <option>Debit</option>
+                    <option>Credit</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Submit" class="btn-submit">
+        </form>
+    </div>
+</body>
+</html>
